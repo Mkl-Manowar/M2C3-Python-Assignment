@@ -31,5 +31,10 @@ interpolation_string = f"Your package will arrive in {number_one} days"
 # 9
 print("Hello World")
 
+# 10
+frase = "Hola, me llamo Mikel"
+frase = frase.replace("Hola", "Adios")
+
+
 
 

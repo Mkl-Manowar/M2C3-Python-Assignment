@@ -1,0 +1,84 @@
+1.¿Cuáles son los tipos de Datos en Python?
+
+Los tipos de Datos son:
+
+String: Es una secuencia de caracteres, normalmente texto y se escribe entre comillas o comillas dobles. Puede utilizarse para escribir un texto.
+Ej:
+sentence = "Hola, como estas"
+age = "28 años"
+
+Number: Es un valor numerico, puede ser integrales o tener decimales. Puede utilizarse para hacer operaciones matematicas.
+Ej: 
+number_one = 5
+number_two = 777
+number_three = 24,85
+
+List: Son secuencias de valores, pueden ser tanto numericos como de texto. Puede utilizarse para guardar un conjunto de datos como una lista de nombres de usuario.
+name_list: ["Mike","Jordan", "Tony", "Sam"]
+order_number: [843,844,845]
+
+Tuple: Es una secuencia de valores, como una lista, pero estos son inmutables.
+Ej:
+tuple = (1,2,3,"potato")
+
+Sets: Son una secuencia de valores que se usa para representar valores unicos, por lo que no puede haber 2 iguales.
+Ej:
+set_one = ([1,2,3,4,5])
+
+Boolean: Es un valor verdadero o falso. Uno de sus usos puede ser para comprobar que un usuario esta logeado.
+Ej:
+logged = True
+
+None: Es una valor vacio, puede usarse cuando no quieres darle valor a una variable todavia.
+Ej:
+age = none
+
+2.¿Qué tipo de convención de nomenclatura deberíamos utilizar para las variables en Python?
+
+La guia de estilo de python PEP 8 recomienda usar las minusculas y separar las palabras usando la barra baja para los nombres de variables y funciones.
+Otras recomendaciones son no utilizar I mayuscula, l minuscula u O como nombres de variables si solo contienen esa letra para mejorar la legibilidad.
+Ejemplo: 
+nombre_variable (correcto)
+NombreVariable (incorrecto)
+X (correcto)
+O (incorrecto)
+
+3.¿Qué es un Heredoc en Python?
+
+Heredoc es como es llama a los string que contienen múltiples líneas. Se puede utilizar para enviar grandes bloques de texto con un solo comando en lugar de tener que enviar multiples string.
+
+Ejemplo:
+message = """
+Lorem ipsum dolor sit amet consectetur adipiscing elit orci ullamcorper euismod proin sociosqu, dignissim purus platea etiam vestibulum nam pulvinar convallis leo hendrerit erat fermentum, curae ac odio netus mattis consequat ornare velit lectus molestie tempus.
+
+Cursus cum mi in porta bibendum convallis ante, molestie rutrum felis magna libero auctor euismod tempor, ut imperdiet nullam tellus platea nec.
+"""
+
+4.¿Qué es una interpolación de cadenas?
+
+Es cuando se sustituyen los nombres de variables por su valor dentro de un string. Por ejemplo si tienes un string para mandar un email al enviar pedido en una aplicacion de paqueteria, podrias utilizar el nombre de la variable para que acceda al valor de numero de pedido previamente definido.
+
+Ejemplo: order_message = f"El pedido {order_number} ha sido enviado"
+
+5.¿Cuándo deberíamos usar comentarios en Python?
+
+Es recomendable utilizar un método apropiado de nombramiento dentro del código a utilizar comentarios, ya que estos pueden quedar desactualizados al hacer cambios y causar problemas a los desarrolladores. Si usas comentarios hay que asegurarse de actualizarlos cada vez que cambias algo.
+
+La sintaxis de los comentarios en python es:
+
+Para los comentarios en una sola linea: 
+# esto es un comentario
+
+Para los comentarios multilinea:
+'''
+Esto es un comentario
+escrito en varias lineas
+'''
+
+6. ¿Cuáles son las diferencias entre aplicaciones monolíticas y de microservicios?
+
+En las monoliticas todo esta hecho en una sola aplicación grande, mientras que en las de microservicios se divide entre varias aplicaciones independientes unidas por la misma interfaz de usuario. Las de microservicios son mas dificiles y caras de hacer y mantener, pero la ventaja que tienen es que si hay una parte que no funciona, el resto de la aplicacion se puede seguir usando, mientras que en las monoliticas si hay un problema, afecta a toda la aplicación.
+
+Un ejemplo de aplicacion de microservicios podria ser Instagram, que tiene por un lado un servicio de mensajeria instantanea, otro de archivo de forografias, otro de tickets de atencion al cliente, etc.
+
+Una aplicación monolitica podria ser una app de una pequeña empresa en la que todo lo que hace la aplicación forma parte de un unico sistema.
